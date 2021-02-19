@@ -1,4 +1,5 @@
 import { CardType } from '../data/Type';
+import WordAudio from './WordAudio';
 
 type CardProps = {
   card: CardType
@@ -11,7 +12,7 @@ function Card(props: CardProps) {
       <p>{word}</p>
       <p>{transcription}</p>
       <p>{translation}</p>
-      
+      <WordAudio word={word} />
     </div>
   );
 }
